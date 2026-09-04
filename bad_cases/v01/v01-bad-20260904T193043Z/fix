@@ -1,0 +1,1 @@
+Validate every manifest path before compose; v0.2 makes assets a formal stage with an explicit success criterion.

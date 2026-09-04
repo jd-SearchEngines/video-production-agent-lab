@@ -1,0 +1,7 @@
+run_id,case,mode,task_success,stage_completion,missing_artifact_count,invalid_transition_count,recovery_locality,steps,wall_time,cost_usd
+v02-20260904T193146Z,A_standard,adhoc,True,3,0,0,none,3,0.002668,null
+v02-20260904T193146Z,A_standard,pipeline,True,6,0,0,none,6,0.002329,null
+v02-20260904T193146Z,B_missing_input,adhoc,False,0,1,1,script,1,0.002482,null
+v02-20260904T193146Z,B_missing_input,pipeline,False,0,1,1,idea,1,0.002418,null
+v02-20260904T193146Z,C_asset_failure,adhoc,False,1,1,1,compose,2,0.002391,null
+v02-20260904T193146Z,C_asset_failure,pipeline,False,3,1,0,assets,4,0.002455,null

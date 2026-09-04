@@ -1,0 +1,13 @@
+run_id,fixture,mode,artifact_schema_pass_rate,instruction_violation_count,missing_fields,cross_stage_inconsistency,revision_count,task_success,provider,model,temperature,input_tokens,output_tokens,latency,cost_usd
+v03-20260904T193146Z,T01,one_large_prompt,1.0,0,0,0,0,True,null,null,null,null,null,null,null
+v03-20260904T193146Z,T02,one_large_prompt,0.0,1,1,0,1,False,null,null,null,null,null,null,null
+v03-20260904T193146Z,T03,one_large_prompt,0.0,1,0,1,1,False,null,null,null,null,null,null,null
+v03-20260904T193146Z,T04,one_large_prompt,0.0,1,1,0,1,False,null,null,null,null,null,null,null
+v03-20260904T193146Z,T05,one_large_prompt,0.0,1,0,1,1,False,null,null,null,null,null,null,null
+v03-20260904T193146Z,T06,one_large_prompt,0.0,1,1,0,1,False,null,null,null,null,null,null,null
+v03-20260904T193146Z,T01,stage_skills,1.0,0,0,0,0,True,null,null,null,null,null,null,null
+v03-20260904T193146Z,T02,stage_skills,1.0,0,0,0,0,True,null,null,null,null,null,null,null
+v03-20260904T193146Z,T03,stage_skills,1.0,0,0,0,0,True,null,null,null,null,null,null,null
+v03-20260904T193146Z,T04,stage_skills,1.0,0,0,0,0,True,null,null,null,null,null,null,null
+v03-20260904T193146Z,T05,stage_skills,1.0,0,0,0,0,True,null,null,null,null,null,null,null
+v03-20260904T193146Z,T06,stage_skills,1.0,0,0,0,0,True,null,null,null,null,null,null,null

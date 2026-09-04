@@ -1,0 +1,14 @@
+{
+  "artifact_type": "video_brief",
+  "version": "0.1",
+  "run_id": "v01-20260904T193042Z",
+  "created_at": "2026-09-04T19:30:42.806219+00:00",
+  "upstream_artifacts": [],
+  "payload": {
+    "title": "Why Coding Agents Can Make Videos",
+    "topic": "A coding agent can turn structured instructions and local tools into a verifiable video deliverable.",
+    "target_duration": 15,
+    "aspect_ratio": "16:9",
+    "style": "minimal dark text cards with accent colors"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "artifact_type": "script",
+  "version": "0.1",
+  "run_id": "v01-20260904T193042Z",
+  "created_at": "2026-09-04T19:30:42.806366+00:00",
+  "upstream_artifacts": [
+    "video_brief"
+  ],
+  "payload": {
+    "title": "Why Coding Agents Can Make Videos",
+    "topic": "A coding agent can turn structured instructions and local tools into a verifiable video deliverable.",
+    "duration_seconds": 15,
+    "sections": [
+      {
+        "id": "s1",
+        "text": "A brief becomes a plan.",
+        "duration_seconds": 5
+      },
+      {
+        "id": "s2",
+        "text": "Tools turn the plan into assets.",
+        "duration_seconds": 5
+      },
+      {
+        "id": "s3",
+        "text": "Verification makes the result deliverable.",
+        "duration_seconds": 5
+      }
+    ]
+  }
+}

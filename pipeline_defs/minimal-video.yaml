@@ -1,0 +1,35 @@
+name: minimal-video
+version: "0.2"
+description: Explicit artifact pipeline for a minimal local video.
+inputs: [video_brief]
+stages:
+  - name: idea
+    required_inputs: [video_brief]
+    produces: [idea]
+    required_tools: []
+    success_criteria: ["brief fields are present"]
+  - name: script
+    required_inputs: [idea]
+    produces: [script]
+    required_tools: [script_writer]
+    success_criteria: ["script has sections and duration"]
+  - name: scene_plan
+    required_inputs: [script]
+    produces: [scene_plan]
+    required_tools: []
+    success_criteria: ["every script section maps to one scene"]
+  - name: assets
+    required_inputs: [scene_plan]
+    produces: [asset_manifest]
+    required_tools: [text_card]
+    success_criteria: ["all asset paths exist"]
+  - name: edit
+    required_inputs: [scene_plan, asset_manifest]
+    produces: [edit_decision]
+    required_tools: []
+    success_criteria: ["cuts cover the target duration"]
+  - name: compose
+    required_inputs: [edit_decision, asset_manifest]
+    produces: [render_report]
+    required_tools: [ffmpeg]
+    success_criteria: ["render report says success"]

@@ -1,0 +1,1 @@
+The failure is localized to compose input materialization: the asset manifest was not checked for file existence before FFmpeg.

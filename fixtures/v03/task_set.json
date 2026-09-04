@@ -1,0 +1,8 @@
+[
+  {"id": "T01", "title": "Agent as Editor", "topic": "a coding agent can assemble a video", "target_duration": 15},
+  {"id": "T02", "title": "Plan Before Render", "topic": "explicit stages reduce hidden failures", "target_duration": 15},
+  {"id": "T03", "title": "Artifacts as Interfaces", "topic": "files make stage handoffs inspectable", "target_duration": 20},
+  {"id": "T04", "title": "Local First", "topic": "a zero API path enables repeatable tests", "target_duration": 15},
+  {"id": "T05", "title": "Skills Have a Job", "topic": "stage instructions constrain agent behavior", "target_duration": 20},
+  {"id": "T06", "title": "Verify the Video", "topic": "a successful render needs measured output checks", "target_duration": 15}
+]

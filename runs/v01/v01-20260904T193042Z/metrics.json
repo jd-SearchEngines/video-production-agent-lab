@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "duration_seconds": 15.0,
+  "resolution": "1280x720",
+  "fps": "30/1",
+  "file_size_bytes": 49667,
+  "wall_time": 0.494,
+  "tool_calls": 4,
+  "cost_usd": null,
+  "run_id": "v01-20260904T193042Z"
+}

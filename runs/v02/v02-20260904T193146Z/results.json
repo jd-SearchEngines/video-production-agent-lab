@@ -1,0 +1,80 @@
+[
+  {
+    "run_id": "v02-20260904T193146Z",
+    "case": "A_standard",
+    "mode": "adhoc",
+    "task_success": true,
+    "stage_completion": 3,
+    "missing_artifact_count": 0,
+    "invalid_transition_count": 0,
+    "recovery_locality": "none",
+    "steps": 3,
+    "wall_time": 0.002668,
+    "cost_usd": null
+  },
+  {
+    "run_id": "v02-20260904T193146Z",
+    "case": "A_standard",
+    "mode": "pipeline",
+    "task_success": true,
+    "stage_completion": 6,
+    "missing_artifact_count": 0,
+    "invalid_transition_count": 0,
+    "recovery_locality": "none",
+    "steps": 6,
+    "wall_time": 0.002329,
+    "cost_usd": null
+  },
+  {
+    "run_id": "v02-20260904T193146Z",
+    "case": "B_missing_input",
+    "mode": "adhoc",
+    "task_success": false,
+    "stage_completion": 0,
+    "missing_artifact_count": 1,
+    "invalid_transition_count": 1,
+    "recovery_locality": "script",
+    "steps": 1,
+    "wall_time": 0.002482,
+    "cost_usd": null
+  },
+  {
+    "run_id": "v02-20260904T193146Z",
+    "case": "B_missing_input",
+    "mode": "pipeline",
+    "task_success": false,
+    "stage_completion": 0,
+    "missing_artifact_count": 1,
+    "invalid_transition_count": 1,
+    "recovery_locality": "idea",
+    "steps": 1,
+    "wall_time": 0.002418,
+    "cost_usd": null
+  },
+  {
+    "run_id": "v02-20260904T193146Z",
+    "case": "C_asset_failure",
+    "mode": "adhoc",
+    "task_success": false,
+    "stage_completion": 1,
+    "missing_artifact_count": 1,
+    "invalid_transition_count": 1,
+    "recovery_locality": "compose",
+    "steps": 2,
+    "wall_time": 0.002391,
+    "cost_usd": null
+  },
+  {
+    "run_id": "v02-20260904T193146Z",
+    "case": "C_asset_failure",
+    "mode": "pipeline",
+    "task_success": false,
+    "stage_completion": 3,
+    "missing_artifact_count": 1,
+    "invalid_transition_count": 0,
+    "recovery_locality": "assets",
+    "steps": 4,
+    "wall_time": 0.002455,
+    "cost_usd": null
+  }
+]

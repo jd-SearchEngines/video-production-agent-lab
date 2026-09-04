@@ -1,0 +1,22 @@
+# Handoff to ChatGPT
+
+- Repository: `https://github.com/jd-SearchEngines/video-production-agent-lab`
+- Branch: `main`
+- Commit: final publication SHA is reported in the final response and can be verified with `git ls-remote origin main`
+- Upstream Repository: `https://github.com/GuyRonnen/openmontage`
+- Upstream SHA: `a06d4c234e436f5a9c5889f2271f4516ef8f6b10`
+- License: upstream AGPL-3.0; this independent implementation MIT
+- Current Version: v0.3
+- Implemented: v0.1 local MP4, v0.1 bad case, v0.2 YAML pipeline and comparison, v0.3 stage skills and comparison, artifact envelopes, reports, evidence contract, tests, CI
+- Not Implemented: v0.4 Tool Registry, v0.5 Checkpoint/Resume, v0.6 Video QA/Repair, v0.7 Cost Governance, human approval, paid providers, full v1.0 integration
+- Environment: Python 3.9.6, PyYAML, Pillow, FFmpeg 8.1.2, ffprobe; no external API keys required
+- Commands: `python3 scripts/run_all.py`; `python3 -m pytest -q`; `ruff check src scripts tests`
+- v0.1 Result: PASS; Run ID `v01-20260904T193042Z`; 15.000s H.264 MP4 at 1280×720, 30fps; `cost_usd=null`
+- v0.2 Result: PASS; Run ID `v02-20260904T193146Z`; pipeline localized Case C at `assets` versus ad-hoc `compose`
+- v0.3 Result: PASS; Run ID `v03-20260904T193146Z`; stage skills 6/6 task success versus one-large-prompt 1/6
+- Key Metrics: tests `5 passed`; Ruff clean; v0.1 file size `49,667` bytes; v0.3 mean instruction violations `0.833` versus `0`
+- Key Bad Cases: missing v0.1 asset; v0.2 missing brief field and asset failure; v0.3 baseline hook omission and cross-stage asset mismatch
+- Graphic Evidence: `docs/content/GRAPHIC_EVIDENCE.md`, E01–E08
+- Video Evidence: `docs/content/VIDEO_EVIDENCE.md`, EP01–EP03 only
+- Blockers: no v0.1–v0.3 blocker; real LLM/provider evidence is intentionally absent; future versions are gate-locked
+- Next Highest-Value Experiment: v0.4 capability routing with a local selector/provider fixture, only after reviewing this round's evidence

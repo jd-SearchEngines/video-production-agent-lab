@@ -1,0 +1,35 @@
+{
+  "artifact_type": "scene_plan",
+  "version": "0.1",
+  "run_id": "v01-20260904T193042Z",
+  "created_at": "2026-09-04T19:30:42.806372+00:00",
+  "upstream_artifacts": [
+    "script"
+  ],
+  "payload": {
+    "duration_seconds": 15,
+    "scenes": [
+      {
+        "scene_id": "s1",
+        "start": 0,
+        "duration": 5,
+        "voiceover": "A brief becomes a plan.",
+        "asset_id": "asset_1"
+      },
+      {
+        "scene_id": "s2",
+        "start": 5,
+        "duration": 5,
+        "voiceover": "Tools turn the plan into assets.",
+        "asset_id": "asset_2"
+      },
+      {
+        "scene_id": "s3",
+        "start": 10,
+        "duration": 5,
+        "voiceover": "Verification makes the result deliverable.",
+        "asset_id": "asset_3"
+      }
+    ]
+  }
+}
