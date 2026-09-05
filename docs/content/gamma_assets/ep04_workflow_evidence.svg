@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+<rect width="1200" height="1500" fill="#f7f8fa"/>
+<style>
+.title{font:700 48px 'Noto Sans CJK SC','Arial',sans-serif;fill:#111827}
+.sub{font:400 20px 'DejaVu Sans Mono','Arial',monospace;fill:#6b7280}
+.h{font:700 34px 'Noto Sans CJK SC','Arial',sans-serif;fill:#111827}
+.t{font:400 28px 'Noto Sans CJK SC','Arial',sans-serif;fill:#374151}
+.m{font:400 26px 'DejaVu Sans Mono','Arial',monospace}
+.b{font:700 28px 'Noto Sans CJK SC','Arial',sans-serif}
+</style>
+<text x="60" y="85" class="title">真实对比数据｜Ad-hoc vs Pipeline</text>
+<text x="60" y="135" class="sub">Source: reports/v02_pipeline_comparison.csv · Case C_asset_failure</text>
+<rect x="60" y="220" width="500" height="600" rx="24" fill="#fee2e2" stroke="#ef4444" stroke-width="3"/>
+<rect x="640" y="220" width="500" height="600" rx="24" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<text x="100" y="290" class="h" fill="#b91c1c">AD-HOC</text><text x="680" y="290" class="h" fill="#1d4ed8">PIPELINE</text>
+<text x="110" y="390" class="b">Brief ↓ Script ↓ Compose ✗</text><text x="690" y="390" class="b">Brief ↓ Script ↓ Assets ✗</text>
+<text x="110" y="500" class="t">recovery_locality = compose</text><text x="690" y="500" class="t">recovery_locality = assets</text>
+<text x="110" y="570" class="t">invalid_transition = 1</text><text x="690" y="570" class="t">invalid_transition = 0</text>
+<text x="60" y="940" class="h">同一个错误，差别不是“会不会失败”，而是“在哪里失败”</text>
+<text x="60" y="1020" class="t">Ad-hoc：素材问题带到 Compose 才暴露</text>
+<text x="60" y="1080" class="t">Pipeline：在 Assets 阶段提前拦截</text>
+<rect x="60" y="1180" width="1080" height="180" rx="20" fill="#eff6ff"/>
+<text x="95" y="1240" class="b" fill="#1d4ed8">更早暴露 → 更容易定位 → 更低返工成本</text>
+<text x="95" y="1300" class="t">真实记录：Case C 两种模式都失败，但失败位置完全不同。</text>
+</svg>
