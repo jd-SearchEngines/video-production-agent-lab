@@ -1,0 +1,20 @@
+name: Gamma Asset Bridge
+on:
+  workflow_dispatch:
+
+jobs:
+  fetch-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Gamma exports
+        run: |
+          mkdir -p gamma_assets
+          curl -L --fail --retry 3 -o gamma_assets/gamma_deck_A.zip 'https://assets.api.gamma.app/export/image/dadwe5vhyv6hdn1/8487ffccd966860873f4d29aa3839677/AI6Styleframe.zip'
+          curl -L --fail --retry 3 -o gamma_assets/gamma_deck_B.zip 'https://assets.api.gamma.app/export/image/4b8tqg1nv730guz/73b7112ef529b4af347118bdab572a92/AI6Styleframe.zip'
+          sha256sum gamma_assets/*.zip
+      - name: Upload bridge artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gamma-assets-bridge
+          path: gamma_assets/*.zip
+          retention-days: 1
